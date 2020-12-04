@@ -1,0 +1,63 @@
+
+body{
+  background: #B5C5D2;
+}
+
+form{
+  max-width: 60%;
+  margin: auto;
+  background: white;
+  border-radius: 1%;
+  padding: 0px 10px 10px 50px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.red-text{
+  color:red;
+}
+h1{
+  text-align: center;
+  padding-top:10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.description1, .description2{
+font-size: 0.85em;
+opacity: 0.9;
+}
+
+.form-group{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid 	rgb(211,211,211);
+  padding: 20px
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+ select{
+    width: 300px;
+    height: 25px;
+    padding: 3px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea{
+
+    width: 300px;
+    resize: none ;
+}
+
+input[type = range]{
+      width: 300px;
+}
+
+#submit{
+  display: block;
+margin: auto;
+margin-top:20px;
+}

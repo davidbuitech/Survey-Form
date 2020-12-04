@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myStudentSurveyForm.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="">
+        <h1 id="title">Student Survey Form</h1>
+        <div id="description">
+            <p class="description1">--We appreciate your taking the form to improve classes--</p>
+            <p class="description2">All fields marked with <span class="red-text">*</span> are required</p>
+        </div>
+        <div class="form-group">
+            <label id="name-label" for="name">First and Last name:</label>
+            <br>
+            <input id="name" type="text" name="name" placeholder="First and Last" autofocus="autofocus" required>
+
+        </div>
+        <div class="form-group">
+            <label for="peoplesoftID">People Soft ID: <span class="red-text">*</span></label>
+            <br> <input id="peoplesoftID" type="text" name="peoplesoftID" pattern="[0-9]{9}" Title="9-digit People Soft ID" placeholder="People Soft ID" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <br> <input id="email" type="email" name="email" placeholder="Please enter a valid email">
+        </div>
+        <div class="form-group">
+            <label id="gender-label" for="gender">Gender <span class="red-text">*</span></label>
+            <br> <select name="gender" id="gender" required>
+                <option value="" disabled style="display: none;">Choose your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="reccomend" for="">What year are you in college: <span class="red-text">*</span> </label>
+            <br>
+            <input id="freshman" type="radio" name="reccommend" value="fre shman" required>
+            <label id="freshman-label" for="freshman">Freshman</label>
+            <br>
+            <input id="sophomore" type="radio" name="reccommend" value="sophomore">
+            <label id="sophomore-label" for="sophomore">Sophomore</label>
+            <br>
+            <input id="junior" type="radio" name="reccommend" value="junior">
+            <label id="junior-label" for="junior">Junior </label>
+            <br>
+            <input id="senior" type="radio" name="reccommend" value="senior">
+            <label id="senior-label" type="radio" for="senior">Senior</label>
+        </div>
+        <div class="form-group">
+            <label id="improvement" for="">What do you like to see improvement?</label>
+            <br>
+            <input id="material" type="checkbox" name="improvement">
+            <label id="material-label" for="material">Material</label>
+            <br>
+            <input id="teaching-method" type="checkbox" name="improvement">
+            <label id="teaching-method-label" for="teaching-method">Teaching method</label>
+            <br>
+            <input id="platform" type="checkbox" name="improvement">
+            <label id="platform-label" for="platform">Platform</label><br>
+            <br> <label for="other-reccomendation-label" for="other-reccomendation">Other reccomendations: </label><br>
+            <textarea id="other-reccomendation" name="improvement" cols="20" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+            <label id="satisf
+            action-label" for="statisfacetion">Course satisfaction(from 1 to 5)</label>
+            <br>
+            <input id="satisfaction" type="range" name="satisfaction" min="1" max="5" value="2">
+        </div>
+        <div class="form-group">
+            <label for="addtional-comments">Addtional comments:</label> <br>
+            <textarea id="addtional-comments" name="additional comments" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div id="submit">
+            <button id="submit" type="submit" class="btn btn-large btn-primary" name="submit">Sumbit</button>
+        </div>
+    </form>
+
+</html>
+</body>
+
+</html>
